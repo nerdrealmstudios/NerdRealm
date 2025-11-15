@@ -29,9 +29,10 @@
         a { color: var(--color-accent-primary); text-decoration: none; transition: color 0.3s ease; }
         a:hover { text-decoration: underline; }
         .studio-header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid var(--color-border); }
-        #studio-logo { width: 160px; height: auto; margin-bottom: 15px; }
+        #studio-logo { width: 160px; height: auto; margin-bottom: 10px; }
+        .studio-title { font-size: 2em; margin-bottom: 0; }
         .hero-banner { width: 100%; border-radius: 6px; margin-bottom: 20px; }
-        .tagline { font-size: 1em; margin-bottom: 40px; text-align: center; }
+        .tagline { font-size: 1.1em; margin-bottom: 25px; margin-top: 25px; text-align: center; padding: 0 10px; font-style: italic; }
         #creations-title { margin-bottom: 0.5em; }
         #creations-title::before { content: '> '; color: var(--color-accent-primary); }
         .app-grid { display: grid; grid-template-columns: 1fr; gap: 25px; margin-top: 20px; }
@@ -53,6 +54,7 @@
             body { padding: 20px; }
             .container { margin: 40px auto; padding: 40px; }
             #studio-logo { width: 200px; }
+            .studio-title { font-size: 2.8em; }
             h2 { font-size: 1.8em; }
             .app-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
             .app-header { flex-direction: row; align-items: center; justify-content: space-between; gap: 0; }
@@ -66,12 +68,13 @@
     <div class="container">
         <header class="studio-header">
             <img src="assets/img/Splash-Screen.png" alt="NerdRealm Studios™ Logo" id="studio-logo">
+            <h1 class="studio-title">NerdRealm Studios™</h1>
         </header>
 
         <main>
             <section id="mission">
-                <img src="assets/img/banner-2.jpg" alt="NerdRealm Banner" class="hero-banner">
                 <p class="tagline">"Forging digital realms where code breathes passion and artistry sparks wonder. We craft the worlds you’ve always imagined."</p>
+                <img src="assets/img/banner-2.jpg" alt="NerdRealm Banner" class="hero-banner">
             </section>
 
             <section id="creations">
